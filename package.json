@@ -1,0 +1,21 @@
+{
+  "name": "claude-history-manager",
+  "version": "1.0.0",
+  "description": "Claude 对话历史管理工具 - 一键启动",
+  "scripts": {
+    "start": "npm run install:all && npm run start:dev",
+    "start:dev": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm run dev",
+    "install:all": "npm run install:server && npm run install:client",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

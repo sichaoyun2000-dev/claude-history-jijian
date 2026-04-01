@@ -1,0 +1,195 @@
+/* Futuristic Cyberpunk Tech Theme - Deep Black */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Deep Black Backgrounds - Futuristic */
+  --bg-primary: #000000;
+  --bg-secondary: #050508;
+  --bg-tertiary: #0a0a10;
+  --bg-elevated: #0d0d14;
+  --bg-gradient: linear-gradient(135deg, #000000 0%, #0a0a12 100%);
+
+  /* Text Colors - Cyan Glow */
+  --text-primary: #e6f7ff;
+  --text-secondary: #64748b;
+  --text-muted: #334155;
+
+  /* Border Colors with Glow */
+  --border-color: #1e293b;
+  --border-glow: #00d4ff;
+  --border-hover: #00d4ff;
+
+  /* Futuristic Cyan/Blue Accent with Glow */
+  --accent-color: #00d4ff;
+  --accent-hover: #7c3aed;
+  --accent-bg: rgba(0, 212, 255, 0.15);
+  --accent-glow: 0 0 15px rgba(0, 212, 255, 0.5), 0 0 30px rgba(0, 212, 255, 0.3);
+
+  /* Purple Secondary Accent */
+  --secondary-accent: #7c3aed;
+  --secondary-glow: 0 0 15px rgba(124, 58, 237, 0.5), 0 0 30px rgba(124, 58, 237, 0.3);
+
+  /* Status Colors with Tech Flair */
+  --success-color: #00ff9d;
+  --success-glow: 0 0 10px rgba(0, 255, 157, 0.5);
+  --warning-color: #ffb700;
+  --danger-color: #ff006e;
+  --danger-glow: 0 0 10px rgba(255, 0, 110, 0.5);
+
+  /* Card Backgrounds with Glass Effect */
+  --card-bg: rgba(10, 10, 16, 0.8);
+  --card-bg-glass: linear-gradient(145deg, rgba(10, 10, 16, 0.9), rgba(5, 5, 8, 0.95));
+  --input-bg: #000000;
+  --hover-bg: rgba(0, 212, 255, 0.08);
+
+  /* Grid Background Texture */
+  --grid-bg:
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+  --grid-size: 20px 20px;
+
+  /* Futuristic Fonts - Orbitron for Display, Rajdhani for Body */
+  --font-display: 'Orbitron', sans-serif;
+  --font-sans: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+
+  /* Animation Timing */
+  --animate-fast: 0.2s;
+  --animate-slow: 0.6s;
+  --animate-glow: 2s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  background-image: var(--grid-bg);
+  background-size: var(--grid-size);
+  line-height: 1.6;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: gridDrift 30s linear infinite;
+}
+
+/* Animated Grid Background */
+@keyframes gridDrift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 var(--grid-size);
+  }
+}
+
+/* Pulsing Glow Animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3), 0 0 20px rgba(0, 212, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), 0 0 40px rgba(0, 212, 255, 0.3);
+  }
+}
+
+/* Border Scan Line Animation */
+@keyframes borderScan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 0;
+  }
+}
+
+/* Slide Fade In Animation */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Glow Text Animation */
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6), 0 0 20px rgba(0, 212, 255, 0.3);
+  }
+}
+
+/* Scan Line Effect */
+@keyframes scanLine {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Scrollbar Styling - Futuristic */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--accent-color), var(--secondary-accent));
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--accent-hover), var(--accent-color));
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+}
+
+/* Selection Style with Glow */
+::selection {
+  background: var(--accent-bg);
+  color: var(--accent-color);
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
