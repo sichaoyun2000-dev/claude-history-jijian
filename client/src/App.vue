@@ -512,7 +512,7 @@ onUnmounted(() => {
     <div class="app-layout">
       <!-- 左侧图标导航栏 -->
       <nav class="nav-bar">
-        <div class="logo">极简</div>
+        <div class="logo">scy</div>
         <button
           v-for="item in navItems"
           :key="item.key"
@@ -983,7 +983,6 @@ onUnmounted(() => {
   flex-shrink: 0;
   box-shadow: var(--accent-glow);
   animation: pulseGlow 3s ease-in-out infinite;
-  writing-mode: vertical-rl;
   letter-spacing: 2px;
 }
 

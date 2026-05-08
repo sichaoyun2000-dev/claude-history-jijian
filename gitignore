@@ -1,0 +1,15 @@
+dist/
+.temp/
+.rn_temp/
+node_modules/
+.DS_Store
+.idea
+.markdown
+mock
+db.json
+yarn-error.log
+package-lock.json
+page-def
+project.config.json
+page-def/db.json
+.history
